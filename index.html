@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="day" data-lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Gusto Napoli — Menyu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="topbar">
+    <div class="lang-switch">
+      <button data-lang="uz" class="active">UZ</button>
+      <button data-lang="ru">RU</button>
+    </div>
+    <button class="theme-btn" id="themeToggle" aria-label="Rejimni almashtirish">
+      <svg id="themeIcon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 1V3M12 21V23M4.22 4.22L5.64 5.64M18.36 18.36L19.78 19.78M1 12H3M21 12H23M4.22 19.78L5.64 18.36M18.36 5.64L19.78 4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <header class="hero">
+    <div class="logo-wrap">
+      <img src="assets/logo.png" alt="Gusto Napoli">
+    </div>
+    <p class="tagline">
+      <span class="t-uz">An'anaviy neapolitan pitsasi, ishtaha ochadi!</span>
+      <span class="t-ru">Настоящая неаполитанская пицца — с удовольствием!</span>
+    </p>
+  </header>
+
+  <nav class="tabs">
+    <button data-target="pizza" class="active">
+      <span class="t-uz">Pitsalar</span><span class="t-ru">Пиццы</span>
+    </button>
+    <button data-target="ichimlik">
+      <span class="t-uz">Ichimliklar</span><span class="t-ru">Напитки</span>
+    </button>
+    <button data-target="desert">
+      <span class="t-uz">Desertlar</span><span class="t-ru">Десерты</span>
+    </button>
+  </nav>
+
+  <!-- ========== PIZZALAR ========== -->
+  <section class="category" id="pizza">
+    <div class="cat-head">
+      <h2><span class="t-uz">Pitsalar</span><span class="t-ru">Пиццы</span></h2>
+    </div>
+    <p class="cat-sub">
+      <span class="t-uz">Yupqa xamir, qo'lda yoyilgan, 32 sm</span>
+      <span class="t-ru">Тонкое тесто, раскатано вручную, 32 см</span>
+    </p>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="margherita">
+          <img src="/gusto-napoli/assets/photo/pizza-1.jpg" alt="Margherita" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Margherita</span>
+          <span class="t-ru">Маргерита</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Pomidor sousi, mozzarella, rayhon, zaytun yog'i</span>
+          <span class="t-ru">Томатный соус, моцарелла, базилик, оливковое масло</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">42 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        <span class="chef-badge t-uz"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z" fill="currentColor"/></svg>Shefning tavsiyasi</span>
+        <span class="chef-badge t-ru"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z" fill="currentColor"/></svg>Рекомендация шефа</span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="diavola">
+          <img src="/gusto-napoli/assets/photo/pizza-2.jpg" alt="Diavola" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Diavola</span>
+          <span class="t-ru">Дьявола</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Achchiq salyami, mozzarella, chili yog'i</span>
+          <span class="t-ru">Острое салями, моцарелла, масло чили</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">54 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="formaggi">
+          <img src="/gusto-napoli/assets/photo/pizza-3.jpg" alt="Quattro Formaggi" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Quattro Formaggi</span>
+          <span class="t-ru">Куатро Формаджи</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Mozzarella, gorgonzola, parmezan, taleggio</span>
+          <span class="t-ru">Моцарелла, горгонзола, пармезан, талледжо</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">58 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="funghi">
+          <img src="/gusto-napoli/assets/photo/pizza-4.jpg" alt="Prosciutto e Funghi" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Prosciutto e Funghi</span>
+          <span class="t-ru">Прошутто э Фунги</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Parma jambon, qo'ziqorin, mozzarella</span>
+          <span class="t-ru">Пармская ветчина, грибы, моцарелла</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">62 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="stagioni">
+          <img src="/gusto-napoli/assets/photo/pizza-5.jpg" alt="Quattro Stagioni" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Quattro Stagioni</span>
+          <span class="t-ru">Куатро Стаджони</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Artishok, qo'ziqorin, jambon, zaytun</span>
+          <span class="t-ru">Артишок, грибы, ветчина, оливки</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">60 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="tartufo">
+          <img src="/gusto-napoli/assets/photo/pizza-6.jpg" alt="Tartufo Bianco" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Tartufo Bianco</span>
+          <span class="t-ru">Тартуфо Бьянко</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Truffle kremi, parmezan, arugula</span>
+          <span class="t-ru">Трюфельный крем, пармезан, руккола</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">78 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        <span class="chef-badge t-uz"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z" fill="currentColor"/></svg>Shefning tavsiyasi</span>
+        <span class="chef-badge t-ru"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z" fill="currentColor"/></svg>Рекомендация шефа</span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="vegetariana">
+          <img src="/gusto-napoli/assets/photo/pizza-7.jpg" alt="Vegetariana" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Vegetariana</span>
+          <span class="t-ru">Вегетариана</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Qalampir, zaytun, piyoz, baqlajon</span>
+          <span class="t-ru">Перец, оливки, лук, баклажан</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">48 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament">
+    <svg viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 10 H30" stroke="currentColor" stroke-width="2"/>
+      <circle cx="50" cy="10" r="3" fill="currentColor"/>
+      <path d="M44 4 C 40 10, 40 10, 44 16" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M56 4 C 60 10, 60 10, 56 16" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M70 10 H100" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <!-- ========== ICHIMLIKLAR ========== -->
+  <section class="category" id="ichimlik">
+    <div class="cat-head">
+      <h2><span class="t-uz">Ichimliklar</span><span class="t-ru">Напитки</span></h2>
+    </div>
+    <p class="cat-sub">
+      <span class="t-uz">Sovuq va issiq ichimliklar</span>
+      <span class="t-ru">Холодные и горячие напитки</span>
+    </p>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="pellegrino">
+          <img src="/gusto-napoli/assets/photo/water-1.jpg" alt="San Pellegrino" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">San Pellegrino</span>
+          <span class="t-ru">Сан Пеллегрино</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Italyan gazlangan mineral suvi, 0.5L</span>
+          <span class="t-ru">Итальянская газированная вода, 0.5л</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">18 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="limonata">
+          <img src="/gusto-napoli/assets/photo/water-2.jpg" alt="Limonata" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Limonata</span>
+          <span class="t-ru">Лимонад</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Yangi siqilgan limon, yalpiz, soda</span>
+          <span class="t-ru">Свежевыжатый лимон, мята, содовая</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">16 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="espresso">
+          <img src="/gusto-napoli/assets/photo/water-3.jpg" alt="Espresso" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Espresso</span>
+          <span class="t-ru">Эспрессо</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Klassik italyan espressosi</span>
+          <span class="t-ru">Классический итальянский эспрессо</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">14 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="chianti">
+          <img src="/gusto-napoli/assets/photo/water-4.jpg" alt="Chianti (bokal)" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Chianti (bokal)</span>
+          <span class="t-ru">Кьянти (бокал)</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Toskana qizil vinosi, 150 ml</span>
+          <span class="t-ru">Красное вино из Тосканы, 150 мл</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">45 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="aperol">
+          <img src="/gusto-napoli/assets/photo/water-5.jpg" alt="Aperol Spritz" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Aperol Spritz</span>
+          <span class="t-ru">Апероль Шпритц</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Aperol, prosekko, soda, apelsin</span>
+          <span class="t-ru">Апероль, просекко, содовая, апельсин</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">52 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        <span class="chef-badge t-uz"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z" fill="currentColor"/></svg>Shefning tavsiyasi</span>
+        <span class="chef-badge t-ru"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z" fill="currentColor"/></svg>Рекомендация шефа</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ornament">
+    <svg viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 10 H30" stroke="currentColor" stroke-width="2"/>
+      <circle cx="50" cy="10" r="3" fill="currentColor"/>
+      <path d="M44 4 C 40 10, 40 10, 44 16" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M56 4 C 60 10, 60 10, 56 16" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M70 10 H100" stroke="currentColor" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <!-- ========== DESERTLAR ========== -->
+  <section class="category" id="desert">
+    <div class="cat-head">
+      <h2><span class="t-uz">Desertlar</span><span class="t-ru">Десерты</span></h2>
+    </div>
+    <p class="cat-sub">
+      <span class="t-uz">Uy tarzida tayyorlangan shirinliklar</span>
+      <span class="t-ru">Десерты домашнего приготовления</span>
+    </p>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="tiramisu">
+          <img src="/gusto-napoli/assets/photo/desert-1.jpg" alt="Tiramisu" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Tiramisu</span>
+          <span class="t-ru">Тирамису</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Mascarpone, espresso, kakao</span>
+          <span class="t-ru">Маскарпоне, эспрессо, какао</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">32 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        <span class="chef-badge t-uz"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z" fill="currentColor"/></svg>Shefning tavsiyasi</span>
+        <span class="chef-badge t-ru"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 9 L21 9 L15.5 13.5 L17.5 21 L12 16.5 L6.5 21 L8.5 13.5 L3 9 L10 9 Z" fill="currentColor"/></svg>Рекомендация шефа</span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="pannacotta">
+          <img src="/gusto-napoli/assets/photo/desert-2.jpg" alt="Panna Cotta" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Panna Cotta</span>
+          <span class="t-ru">Панна Котта</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Vanilli krem, rezavorlar sousi</span>
+          <span class="t-ru">Ванильный крем, ягодный соус</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">28 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="cannoli">
+          <img src="/gusto-napoli/assets/photo/desert-3.jpg" alt="Cannoli Siciliani" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Cannoli Siciliani</span>
+          <span class="t-ru">Каннoли Сицилийские</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Ricotta krem, pistaxa, 2 dona</span>
+          <span class="t-ru">Крем рикотта, фисташки, 2 шт</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">30 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+      <div class="menu-card">
+        <button class="menu-thumb" data-id="gelato">
+          <img src="/gusto-napoli/assets/photo/desert-4.jpg" alt="Gelato" loading="lazy">
+        </button>
+        <div class="menu-name">
+          <span class="t-uz">Gelato</span>
+          <span class="t-ru">Джелато</span>
+        </div>
+        <div class="menu-desc">
+          <span class="t-uz">Fisto, vanil yoki shokolad — 3 sharik</span>
+          <span class="t-ru">Фисташковое, ванильное, шоколадное — 3 шарика</span>
+        </div>
+        <div class="menu-foot">
+          <span class="menu-price">24 000 <span class="t-uz">so'm</span><span class="t-ru">сум</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="fname">Gusto Napoli</div>
+
+    <div class="foot-row">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M12 21C12 21 19 14.5 19 9.5C19 5.36 15.64 2 12 2C8.36 2 5 5.36 5 9.5C5 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
+      <div>
+        <div class="flabel"><span class="t-uz">Manzil</span><span class="t-ru">Адрес</span></div>
+        <div class="fval">
+          <span class="t-uz">Amir Temur ko'chasi 24, Toshkent</span>
+          <span class="t-ru">Улица Амира Темура, 24, Ташкент</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-row">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19.92C22 20.47 21.55 20.92 21 20.9C9.4 20.2 3.8 14.6 3.1 3C3.08 2.45 3.53 2 4.08 2H7.08C7.58 2 8.01 2.37 8.07 2.87C8.24 4.25 8.6 5.6 9.14 6.87C9.31 7.27 9.2 7.74 8.88 8.03L7.4 9.37C8.66 12.1 10.9 14.34 13.63 15.6L14.97 14.12C15.26 13.8 15.73 13.69 16.13 13.86C17.4 14.4 18.75 14.76 20.13 14.93C20.63 14.99 21 15.43 21 15.93" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div>
+        <div class="flabel"><span class="t-uz">Telefon</span><span class="t-ru">Телефон</span></div>
+        <div class="fval"><a href="tel:+998712003040">+998 71 200 30 40</a></div>
+        <div class="fval"><a href="tel:+998901234567">+998 90 123 45 67</a></div>
+      </div>
+    </div>
+
+    <div class="foot-row">
+      <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 7V12L15.5 14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <div>
+        <div class="flabel"><span class="t-uz">Ish vaqti</span><span class="t-ru">Часы работы</span></div>
+        <div class="fval">
+          <span class="t-uz">Har kuni 11:00 – 23:00</span>
+          <span class="t-ru">Ежедневно 11:00 – 23:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-card">
+      <div class="map-label">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 21C12 21 19 14.5 19 9.5C19 5.36 15.64 2 12 2C8.36 2 5 5.36 5 9.5C5 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.8"/></svg>
+        <span class="t-uz">Bizni xaritada toping</span>
+        <span class="t-ru">Найдите нас на карте</span>
+      </div>
+      <iframe
+        src="https://www.google.com/maps?q=Amir+Temur+ko%27chasi+24,+Toshkent&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Gusto Napoli location">
+      </iframe>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Amir+Temur+ko%27chasi+24,+Toshkent" target="_blank" rel="noopener">
+        <span class="t-uz">Google Xaritada ochish</span>
+        <span class="t-ru">Открыть в Google Картах</span>
+      </a>
+    </div>
+
+    <p class="fnote">Buon Appetito!</p>
+  </footer>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M6 18L18 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+  </button>
+  <div class="lightbox-inner" id="lightboxInner"></div>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
